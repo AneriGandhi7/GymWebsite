@@ -70,6 +70,15 @@ $mediaStdLineheight:22px;
             .nav-tabs{flex: inherit;
             }
         }
+        .tab-content{
+            .tab-pane{
+                .images-div{
+                    img{
+                        padding: 1px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -122,3 +131,4 @@ $mediaStdLineheight:22px;
     .bmi-range-cal-sec.pd-tb-set{padding:30px 0 5px 0;}
     
  }
+
