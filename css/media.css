@@ -36,6 +36,9 @@
   .our-work-sec .gallery-menu-title .nav-tabs {
     flex: inherit;
   }
+  .our-work-sec .tab-content .tab-pane .images-div img {
+    padding: 1px;
+  }
 }
 @media (max-width: 767.98px) {
   .plan-sec .row .col-12.col-md-4 {
