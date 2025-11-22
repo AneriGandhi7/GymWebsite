@@ -1,0 +1,117 @@
+@media (max-width: 1199.98px) {
+  .header-sec {
+    padding: 0;
+  }
+  .header-sec .navbar .logo {
+    font-size: 40px;
+  }
+  .plan-sec .plan-details .card-content .plan-name h2 {
+    font-size: 25px;
+    line-height: 33px;
+    margin: 10px 0 20px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .pd-tb-set {
+    padding: 50px 0;
+  }
+  .header-sec .navbar {
+    padding: 8px 0;
+  }
+  .header-sec .navbar .navbar-nav .nav-item .nav-link {
+    display: inline-block;
+  }
+  .contact-sec .sec-heading {
+    text-align: center;
+  }
+  .contact-sec .custom-btn {
+    text-align: center;
+  }
+  .bmi-range-cal-sec .sec-heading {
+    padding-bottom: 25px;
+  }
+  .plan-sec .plan-details {
+    padding: 30px;
+  }
+  .our-work-sec .gallery-menu-title .nav-tabs {
+    flex: inherit;
+  }
+}
+@media (max-width: 767.98px) {
+  .plan-sec .row .col-12.col-md-4 {
+    margin-bottom: 50px;
+  }
+  .plan-sec .row .col-12.col-md-4:last-child {
+    margin-bottom: 0;
+  }
+  .our-work-sec .gallery-menu-title .nav-tabs .nav-item .nav-link {
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contactus-bottom .contactus-links li {
+    padding: 10px;
+  }
+  .aboutus-sec .row .about-us-image .overlay {
+    transform: rotate(2deg) skew(3deg);
+    animation: none;
+  }
+  .sec-heading {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 25px;
+  }
+  .services-sec .service-content {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-sec .banner-message h1, .banner-sec .banner-message p {
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .banner-sec .banner-message p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .banner-sec .banner-message .banner-button {
+    padding: 5px 10px;
+  }
+  .sec-content .details {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .sec-heading {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+  .form-control, label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .our-work-sec .gallery-menu-title .white-clr {
+    display: none;
+  }
+  .our-work-sec .gallery-menu-title .nav-tabs {
+    justify-content: inherit;
+  }
+  .our-work-sec .gallery-menu-title .nav-tabs .nav-item {
+    margin-right: 7px;
+  }
+  .our-work-sec .gallery-menu-title .nav-tabs .nav-item .nav-link {
+    margin-bottom: 10px;
+  }
+  .pd-tb-set {
+    padding: 30px 0;
+  }
+  .contactus-bottom .contactus-links {
+    display: block;
+    justify-content: inherit;
+  }
+  .bmi-range-cal-sec.pd-tb-set {
+    padding: 30px 0 5px 0;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

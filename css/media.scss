@@ -1,0 +1,124 @@
+// paragrapg style
+$mediaStdFontsize:14px;
+$mediaStdLineheight:22px;
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    .header-sec{
+        padding: 0;
+        .navbar{
+            .logo{
+                font-size: 40px;
+            }
+        }
+    }
+    // .banner-sec {
+    //     .banner-message{
+    //         bottom: 35px;
+    //         h1{
+    //             font-size: 30px;
+    //             line-height: 38px;
+    //         }
+    //         p{
+    //             font-size: 18px;
+    //             line-height: 26px;
+    //         }
+    //         .banner-button{
+    //             font-size: 16px;
+    //             line-height: 24px;
+    //             padding: 10px 20px;
+    //         }
+    //     }
+    // }
+    .plan-sec .plan-details .card-content .plan-name h2{font-size: 25px;line-height: 33px;margin: 10px 0 20px 0;}
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .pd-tb-set{padding: 50px 0;}
+    .header-sec{
+        .navbar{
+            padding: 8px 0;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{display: inline-block;}
+            }
+        }
+    }
+    }
+    .contact-sec{
+        .sec-heading{text-align: center;}
+        .custom-btn{text-align: center;}
+    }
+
+    .bmi-range-cal-sec{
+        .sec-heading{
+            padding-bottom: 25px;
+        }
+    }
+    .plan-sec{ 
+        .plan-details{
+            padding: 30px;
+        }
+    }
+
+    .our-work-sec{
+        .gallery-menu-title{
+            .nav-tabs{flex: inherit;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .plan-sec{
+        .row{
+            .col-12.col-md-4{
+                margin-bottom: 50px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .our-work-sec .gallery-menu-title .nav-tabs .nav-item .nav-link{padding: 7px 15px;font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;}
+    .contactus-bottom .contactus-links li{padding: 10px;}
+    .aboutus-sec .row .about-us-image .overlay{transform: rotate(2deg) skew(3deg);animation: none;}
+    .sec-heading{font-size: 40px;line-height: 48px;margin-bottom: 25px;}
+    .services-sec .service-content{margin-top: 25px;}
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .banner-sec{
+        .banner-message{
+        h1, p{
+            font-size: 35px;line-height: 43px;
+        }        
+        p{
+            font-size: 20px;line-height: 28px;
+        }
+        .banner-button{padding: 5px 10px;}
+        }
+    }
+    .sec-content {
+        .details{
+            font-size: $mediaStdFontsize;
+            line-height: $mediaStdLineheight;
+        }
+    }
+    .sec-heading{font-size: 30px;line-height: 38px;margin-bottom: 25px;}
+    .form-control, label{font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;}
+    .our-work-sec .gallery-menu-title .white-clr{display: none;}
+    .our-work-sec .gallery-menu-title .nav-tabs{justify-content: inherit;}
+    .our-work-sec .gallery-menu-title .nav-tabs .nav-item{margin-right: 7px;}
+    .our-work-sec .gallery-menu-title .nav-tabs .nav-item .nav-link{margin-bottom: 10px;}    
+    .pd-tb-set{padding: 30px 0;}
+    .contactus-bottom .contactus-links{display: block;justify-content: inherit;}
+    .bmi-range-cal-sec.pd-tb-set{padding:30px 0 5px 0;}
+    
+ }
