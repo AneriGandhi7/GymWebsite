@@ -289,7 +289,7 @@ textarea.form-control {
 .our-work-sec .tab-content .tab-pane .images-div img {
   width: calc(20% - 4px);
   aspect-ratio: 1/1;
-  padding: 7px;
+  padding: 1px;
   border-radius: 20px;
 }
 

@@ -15,25 +15,18 @@ $mediaStdLineheight:22px;
             }
         }
     }
-    // .banner-sec {
-    //     .banner-message{
-    //         bottom: 35px;
-    //         h1{
-    //             font-size: 30px;
-    //             line-height: 38px;
-    //         }
-    //         p{
-    //             font-size: 18px;
-    //             line-height: 26px;
-    //         }
-    //         .banner-button{
-    //             font-size: 16px;
-    //             line-height: 24px;
-    //             padding: 10px 20px;
-    //         }
-    //     }
-    // }
     .plan-sec .plan-details .card-content .plan-name h2{font-size: 25px;line-height: 33px;margin: 10px 0 20px 0;}
+    .our-work-sec{
+        .tab-content{
+            .tab-pane{
+                .images-div{
+                    img{
+                        width: calc(25% - 4px);
+                    }
+                }
+            }
+        }
+    }
  }
 
 // Medium devices (tablets, less than 992px)
@@ -70,11 +63,11 @@ $mediaStdLineheight:22px;
             .nav-tabs{flex: inherit;
             }
         }
-        .tab-content{
+          .tab-content{
             .tab-pane{
                 .images-div{
                     img{
-                        padding: 1px;
+                        width: calc(33% - 4px);
                     }
                 }
             }
@@ -94,7 +87,26 @@ $mediaStdLineheight:22px;
             }
         }
     }
-    .our-work-sec .gallery-menu-title .nav-tabs .nav-item .nav-link{padding: 7px 15px;font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;}
+    .our-work-sec {
+        .gallery-menu-title{
+            .nav-tabs{ 
+                .nav-item{ 
+                    .nav-link{
+                        padding: 7px 15px;font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .images-div{
+                    img{
+                        width: calc(50% - 4px);
+                    }
+                }
+            }
+        }
+    }
     .contactus-bottom .contactus-links li{padding: 10px;}
     .aboutus-sec .row .about-us-image .overlay{transform: rotate(2deg) skew(3deg);animation: none;}
     .sec-heading{font-size: 40px;line-height: 48px;margin-bottom: 25px;}
@@ -105,6 +117,7 @@ $mediaStdLineheight:22px;
 @media (max-width: 575.98px) { 
     .banner-sec{
         .banner-message{
+            bottom: 100px;
         h1, p{
             font-size: 35px;line-height: 43px;
         }        

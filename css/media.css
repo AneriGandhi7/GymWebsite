@@ -10,6 +10,9 @@
     line-height: 33px;
     margin: 10px 0 20px 0;
   }
+  .our-work-sec .tab-content .tab-pane .images-div img {
+    width: calc(25% - 4px);
+  }
 }
 @media (max-width: 991.98px) {
   .pd-tb-set {
@@ -37,7 +40,7 @@
     flex: inherit;
   }
   .our-work-sec .tab-content .tab-pane .images-div img {
-    padding: 1px;
+    width: calc(33% - 4px);
   }
 }
 @media (max-width: 767.98px) {
@@ -51,6 +54,9 @@
     padding: 7px 15px;
     font-size: 14px;
     line-height: 22px;
+  }
+  .our-work-sec .tab-content .tab-pane .images-div img {
+    width: calc(50% - 4px);
   }
   .contactus-bottom .contactus-links li {
     padding: 10px;
@@ -69,6 +75,9 @@
   }
 }
 @media (max-width: 575.98px) {
+  .banner-sec .banner-message {
+    bottom: 100px;
+  }
   .banner-sec .banner-message h1, .banner-sec .banner-message p {
     font-size: 35px;
     line-height: 43px;
