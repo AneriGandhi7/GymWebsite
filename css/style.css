@@ -609,6 +609,11 @@ textarea.form-control {
   color: #000000;
 }
 
+footer .footer-links a {
+  color: #404040;
+  display: block;
+}
+
 .bottom-line {
   background-color: #000000;
   color: #ffffff;

@@ -603,6 +603,15 @@ textarea.form-control{resize: none;}
     }     
 }
 
+footer{
+    .footer-links{
+        a{
+            color: $secondary_color;
+            display: block;
+        }
+    }
+}
+
 //bootom line sec
 .bottom-line{
     background-color: $primary_color;color: $white_color;padding: 20px 0;    
