@@ -77,6 +77,7 @@ $mediaStdLineheight:22px;
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+    .banner-sec .banner-image{background-attachment: inherit;}
     .plan-sec{
         .row{
             .col-12.col-md-4{

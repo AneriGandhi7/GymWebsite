@@ -44,6 +44,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .banner-sec .banner-image {
+    background-attachment: inherit;
+  }
   .plan-sec .row .col-12.col-md-4 {
     margin-bottom: 50px;
   }
