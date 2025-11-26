@@ -60,9 +60,8 @@
   
   // back to top 
   const backToTopBtn = document.getElementById("backToTop");
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
 
   window.addEventListener("scroll", () => {
@@ -136,14 +135,13 @@ const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
   // click on header menu
   const headerHeight = document.querySelector('header').offsetHeight;
-    const links = document.querySelectorAll('.navbar-nav .nav-link');
+    const links = document.querySelectorAll('.navbar-nav .nav-link, .btn-reach');
 
     links.forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').slice(1);
         const targetElement = document.getElementById(targetId);
-        console.log(headerHeight);
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
         
         const activeItem = document.querySelector('.navbar-nav .nav-link.active');
