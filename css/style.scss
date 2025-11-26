@@ -116,6 +116,7 @@ textarea.form-control{resize: none;}
     background-color: $primary_color; 
     box-shadow: 0 0 10px $secondary_color;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .close-icon{display: none;color: $white_color;font-size: 30px;}
     .navbar{    
         padding: 0;    
         .logo{
