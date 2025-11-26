@@ -57,7 +57,11 @@
     }
   }
 
-  
+  // mobile open close icon 
+   const toggler = document.querySelector('.navbar-toggler');
+  const openIcon = document.querySelector('.open-icon');
+  const closeIcon = document.querySelector('.close-icon');
+
   // back to top 
   const backToTopBtn = document.getElementById("backToTop");
   const sections = document.querySelectorAll("section");
@@ -155,14 +159,13 @@
           top: targetPosition,
           behavior: 'smooth'
         });
+        openIcon.style.display = openIcon.style.display === 'none' ? 'inline-block' : 'none';
+    closeIcon.style.display = closeIcon.style.display === 'none' ? 'inline-block' : 'none';
       });
+      
     });     
 
     // click on hamburger menu it will convert to close icon 
-    const toggler = document.querySelector('.navbar-toggler');
-  const openIcon = document.querySelector('.open-icon');
-  const closeIcon = document.querySelector('.close-icon');
-
   toggler.addEventListener('click', () => {
     openIcon.style.display = openIcon.style.display === 'none' ? 'inline-block' : 'none';
     closeIcon.style.display = closeIcon.style.display === 'none' ? 'inline-block' : 'none';
