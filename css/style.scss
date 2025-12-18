@@ -1,7 +1,19 @@
-// colors 
+/* ================================
+   GYM BLACK + GRAY THEME (SCSS)
+================================ */
+
+
+// Variables 
 $primary_color:#000000;
 $secondary_color:#404040;
+$darkText_color:#404040;
+$lightText_color:#ffffff;
 $white_color:#ffffff;
+$buttonDark_bg:#000000;
+$buttonlight_bg:#ffffff;
+$border_color:#404040;
+$title_color:#000000;
+
 
 // font style css
 $font:"Montserrat", sans-serif;
@@ -41,7 +53,7 @@ a{text-decoration: none;}
     line-height: $headingLineHeight;
     text-transform: $capitalize;
     font-weight: $fontBold;
-    color:$primary_color;    
+    color:$title_color;    
     margin-bottom: 35px;
 }
 .white-clr{color: $white_color;}
@@ -49,16 +61,16 @@ a{text-decoration: none;}
     .details{
         font-size: $stdFontsize;
         line-height: $stdLineheight;
-        color: $secondary_color;
+        color: $darkText_color;
         padding: 25px 0;
         margin-bottom: 0;
     }
 }
 .pd-right-0{padding-right: 0;}
-.form-check-input{border-color: $secondary_color; &:focus{box-shadow: none;border-color: $primary_color;}}
+.form-check-input{border-color: $border_color; &:focus{box-shadow: none;border-color: $primary_color;}}
 .form-check-input:checked{background-color: $primary_color;border-color: $primary_color;}
 .form-control{
-    border-color: $secondary_color;
+    border-color: $border_color;
     &:focus{
         box-shadow: none;
         border-color: $primary_color; 
@@ -97,8 +109,8 @@ textarea.form-control{resize: none;}
 .custom-btn{    
     .btn-block{
         display: inline-block;
-        background-color: $primary_color;
-        color: $white_color;
+        background-color: $buttonDark_bg;
+        color: $lightText_color;
         padding: 10px 20px;
         border-radius: 8px;
         text-transform: $capitalize;
@@ -123,14 +135,14 @@ textarea.form-control{resize: none;}
             font-family: $font;
             font-weight: $fontSemiBold;
             font-size: 50px;
-            color:$white_color;
+            color:$lightText_color;
             padding: 0;
         }
         .navbar-nav{padding:0 20px;
             .nav-item{
                 .nav-link{
                     text-transform: $capitalize;
-                    color:$white_color;
+                    color:$lightText_color;
                     margin: 15px 10px;                    
                     position: relative;
                     &:after{
@@ -167,11 +179,11 @@ textarea.form-control{resize: none;}
         background-attachment: fixed;
         overflow: hidden;
         position: relative;
-    }   
+    }  
     .banner-message{
         position: absolute;
         bottom: 50px;
-        color: $white_color;
+        color: $lightText_color;
         padding: 0 15px;
         h1{
             font-size:48px;
@@ -203,7 +215,7 @@ textarea.form-control{resize: none;}
             border-radius: 5px;            
             padding: 10px 30px;
             background-color: $white_color;
-            color: $secondary_color;  
+            color: $darkText_color;  
             &:hover{
                 background: linear-gradient(to right, rgb(0, 0, 0 ,1) 0%, rgb(64, 64, 64,1) 51%, rgb(64, 64, 64, 1) 100%);
                 color:$white_color;                                
@@ -258,7 +270,7 @@ textarea.form-control{resize: none;}
                 &:last-child{margin-right: 0;}                
                 .nav-link{
                     text-transform: capitalize;
-                    color: $white_color;
+                    color: $lightText_color;
                     background-color: $secondary_color;
                     font-size: $stdFontsize;
                     line-height: $stdLineheight;
@@ -296,7 +308,7 @@ textarea.form-control{resize: none;}
     text-align: center;
     th{
         background: $primary_color;
-        color: $white_color;
+        color: $lightText_color;
         padding: 15px;
         border: 7px solid $white_color;
         font-weight: $fontBold;
@@ -310,13 +322,13 @@ textarea.form-control{resize: none;}
         font-weight: $fontMedium;
         &:first-child{
             background-color: $primary_color;
-            color:$white_color;
+            color:$lightText_color;
             font-weight: $fontBold;
             text-transform: $uppercase;
         }
         .cell-content{
-            h4{font-size: $stdFontsize;line-height: $stdLineheight;color:$primary_color}
-            span{font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;color: $secondary_color;}
+            h4{font-size: $stdFontsize;line-height: $stdLineheight;color:$title_color}
+            span{font-size: $mediaStdFontsize;line-height: $mediaStdLineheight;color: $darkText_color;}
         }
     }
 }
@@ -352,7 +364,7 @@ textarea.form-control{resize: none;}
         background: $primary_color;
         border-radius: 16px;
         overflow: hidden;
-        color: #fff;
+        color: $lightText_color;
         cursor: pointer;
         transition: transform 0.3s ease;
         &:hover {
@@ -395,13 +407,13 @@ textarea.form-control{resize: none;}
                 font-size: 17px;
                 line-height: 25px;
                 text-transform: capitalize;
-                color: $white_color;
+                color: $lightText_color;
             }
             .detail{
                 margin: 0;
                 font-size: $mediaStdFontsize;
                 line-height: $mediaStdLineheight;
-                color: $white_color;
+                color: $lightText_color;
             }
         }
     }
@@ -430,17 +442,17 @@ textarea.form-control{resize: none;}
             background-color: rgba(0,0,0,0.8);
         }      
         &:hover{
-            box-shadow: 0px 10px 10px $secondary_color;
+            box-shadow: 0px 10px 10px $border_color;
         }
         .card-content{
             position: relative;
             z-index: 1;
-            .discount-text{text-align:center;font-size: 20px;line-height: 28px; color: $secondary_color;animation: blinker 2s infinite;font-weight: $fontSemiBold;margin-bottom: 10px;}
+            .discount-text{text-align:center;font-size: 20px;line-height: 28px; color: $darkText_color;animation: blinker 2s infinite;font-weight: $fontSemiBold;margin-bottom: 10px;}
             .plan-title{display: flex;justify-content:center;
                 h3{
                     text-align: center;
                     background-color:$primary_color;
-                    color: $white_color;
+                    color: $lightText_color;
                     font-size: $stdFontsize;
                     line-height: $stdLineheight;
                     align-content: center;
@@ -459,7 +471,7 @@ textarea.form-control{resize: none;}
             }
             .plan-name{
                 h2 {
-                    color: $white_color;
+                    color: $lightText_color;
                     font-size: 30px;
                     line-height: 38px;
                     text-transform: capitalize;
@@ -467,7 +479,7 @@ textarea.form-control{resize: none;}
                 }
             }
             .plan-list {
-                color: $white_color;
+                color: $lightText_color;
                 font-size: $mediaStdFontsize;
                 line-height: $mediaStdLineheight;
                 .plan-name-list{
@@ -484,7 +496,7 @@ textarea.form-control{resize: none;}
                     &:hover{     
                         background: linear-gradient(to right, rgb(255, 215, 0 , 1) 0%, rgb(51, 51, 51) 51%, rgb(255, 215, 0, 1) 100%);
                         background-size: 200% auto;
-                        color: $white_color;
+                        color: $lightText_color;
                         border: 1px solid $primary_color;
                     }
                 }
@@ -497,15 +509,15 @@ textarea.form-control{resize: none;}
  @keyframes blinker {
         0% {
             font-size: 20px; 
-            color:$secondary_color;
+            color:$darkText_color;
         }
         50% {
             font-size:25px; 
-            color:#ffd700
+            color:#ffd700;
         }
         100% {
             font-size: 20px; 
-            color: $secondary_color;
+            color: $darkText_color;
         }
     }
 
@@ -547,10 +559,10 @@ textarea.form-control{resize: none;}
                 line-height: 25px;
                 text-transform: capitalize;
                 margin: 0;
-                color:$primary_color;
+                color:$title_color;
             }
             .desc{
-                color:$secondary_color;
+                color:$darkText_color;
                 font-size: $mediaStdFontsize;
                 line-height: $mediaStdLineheight;
             }
@@ -565,21 +577,21 @@ textarea.form-control{resize: none;}
             line-height: 48px;
             font-weight: 600;
             text-transform: capitalize;
-            color: $secondary_color;
+            color: $darkText_color;
         }
     }
     .contactus-bottom-content{
         &.quick-links{
             margin: 20px 0;
             .contactus-links{
-                border-top:1px solid $secondary_color;
-                border-bottom:1px solid $secondary_color;
+                border-top:1px solid $border_color;
+                border-bottom:1px solid $border_color;
             }
         }         
         p{
             font-size: $mediaStdFontsize;
             line-height: $mediaStdLineheight;
-            color:$secondary_color;
+            color:$darkText_color;
             margin: 10px 0;
         }
     }
@@ -595,7 +607,7 @@ textarea.form-control{resize: none;}
                 text-transform: capitalize;
                 font-size: $mediaStdFontsize;
                 line-height: $mediaStdLineheight;
-                color: $secondary_color;
+                color: $darkText_color;
                 &:hover{
                     color: $primary_color;
                 }
@@ -607,7 +619,7 @@ textarea.form-control{resize: none;}
 footer{
     .footer-links{
         a{
-            color: $secondary_color;
+            color: $darkText_color;
             display: block;
         }
     }
@@ -615,7 +627,7 @@ footer{
 
 //bootom line sec
 .bottom-line{
-    background-color: $primary_color;color: $white_color;padding: 20px 0;    
+    background-color: $primary_color;color: $lightText_color;padding: 20px 0;    
     p{
         margin-bottom: 0;
         font-size: $mediaStdFontsize;

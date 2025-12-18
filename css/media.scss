@@ -15,7 +15,7 @@ $mediaStdLineheight:22px;
             }
         }
     }
-    .plan-sec .plan-details .card-content .plan-name h2{font-size: 25px;line-height: 33px;margin: 10px 0 20px 0;}
+    .plan-sec {.plan-details{ .card-content{ .plan-name {h2{font-size: 25px;line-height: 33px;margin: 10px 0 20px 0;}}}}}
     .our-work-sec{
         .tab-content{
             .tab-pane{

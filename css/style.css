@@ -1,3 +1,6 @@
+/* ================================
+   GYM BLACK + GRAY THEME (SCSS)
+================================ */
 .width-100 {
   width: 100%;
 }
@@ -368,7 +371,7 @@ textarea.form-control {
   background: #000000;
   border-radius: 16px;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
